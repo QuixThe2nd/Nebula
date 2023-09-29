@@ -2,8 +2,8 @@ class Nothing():
     def __init__(self):
         pass
 
-    def compress(image: list[list[int]]) -> bytes:
-        pass
+    def compress(self, image: list[list[int]]) -> bytes:
+        return b''
 
-    def decompress(compressed: bytes) -> list[list[int]]:
-        pass
+    def decompress(self, compressed: bytes) -> list[list[int]]:
+        return []
