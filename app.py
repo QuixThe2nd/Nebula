@@ -1,9 +1,10 @@
 from modules.image import Image
+from modules.serializer import Serializer
 
 IMAGE_PATH = "test.png"
 image = Image(IMAGE_PATH)
-image.read()
-print(image.data())
+data = image.read()
 
-image.serialize()
-print(image.serialized())
+serializer = Serializer()
+serialized = serializer.serialize(data)
+print(serialized)
