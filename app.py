@@ -8,4 +8,4 @@ print(f"Image data: {data}")
 
 serializer = Serializer()
 serialized = serializer.serialize(data)
-print(serialized)
+print(f"Serialized data: {serialized}")
