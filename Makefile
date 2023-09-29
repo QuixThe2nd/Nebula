@@ -9,3 +9,8 @@ help: ## Shows this help message
 init: ## Install dependencies
 	@echo "Installing dependencies..."
 	@pip install -r requirements.txt
+
+.PHONY: run
+run: ## Run the application
+	@echo "Running the application..."
+	@python app.py
