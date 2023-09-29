@@ -1,4 +1,4 @@
-from modules.serialiser import Serializer
+from modules.serializer import Serializer
 
 raw_image = [
     [0, 0, 1, 1],

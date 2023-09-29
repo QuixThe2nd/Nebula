@@ -1,5 +1,6 @@
 from modules.image import Image
 
 IMAGE_PATH = "test.png"
-pixelArray = Image(IMAGE_PATH).read()
-print(pixelArray)
+image = Image(IMAGE_PATH)
+image.read()
+print(image.data())
