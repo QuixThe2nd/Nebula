@@ -3,10 +3,11 @@ import struct
 
 class Serializer:
     def __init__(self):
-        self.output = b''
+        pass
 
-    def serialise(self, data):
-        self.output = b'\x00\x00' +  b''.join([struct.pack('H', number) for number in dimensions(data)])
+    def serialize(self, data: list[list[int]]) -> bytes:
+        output = b'\x00\x00' +  b''.join([struct.pack('H', number) for number in dimensions(data)])
         for row in data:
             for pixel in row:
-                self.output += struct.pack('H', pixel)
+                output += struct.pack('H', pixel)
+        return output

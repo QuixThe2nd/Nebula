@@ -8,5 +8,5 @@ raw_image = [
 ]
 
 serialiser = modules.serialiser.Serializer()
-serialiser.serialise(raw_image)
+serialiser.serialize(raw_image)
 print(serialiser.output)
