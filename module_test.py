@@ -7,6 +7,6 @@ raw_image = [
     [0, 0, 0, 0],
 ]
 
-serialiser = modules.serialiser.serialiser()
+serialiser = modules.serialiser.Serializer()
 serialiser.serialise(raw_image)
 print(serialiser.output)
