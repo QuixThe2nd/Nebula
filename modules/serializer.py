@@ -1,5 +1,5 @@
-from utils.dimensions import dimensions
 import struct
+from utils.dimensions import dimensions
 
 class Serializer:
     def __init__(self):
