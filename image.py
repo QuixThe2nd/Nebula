@@ -6,5 +6,3 @@ class Image:
 
     def read(self):
         return cv2.imread(self.path, cv2.IMREAD_GRAYSCALE)
-
-# print(Image("test.png").read())
