@@ -9,4 +9,4 @@ raw_image = [
 
 serialiser = Serializer()
 serialiser.serialize(raw_image)
-print(serialiser.output)
+print(serialiser.output())
