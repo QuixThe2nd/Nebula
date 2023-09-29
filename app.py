@@ -1,4 +1,4 @@
-from image import Image
+from modules.image import Image
 
 IMAGE_PATH = "test.png"
 pixelArray = Image(IMAGE_PATH).read()

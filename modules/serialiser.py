@@ -2,6 +2,7 @@ from utils.dimensions import dimensions
 import struct
 
 class Serializer:
+    @staticmethod
     def serialise(self, data):
         self.output = b'\x00\x00' +  b''.join([struct.pack('H', number) for number in dimensions(data)])
         for row in data:
