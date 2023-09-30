@@ -10,9 +10,7 @@ class Byte_Repetition:
         output = int(self.id).to_bytes(2, byteorder='big')
         last_byte = None
         repetitions = 0
-        i = 0
         for byte in data:
-            i += 1
             if byte == last_byte:
                 repetitions += 1
             else:
